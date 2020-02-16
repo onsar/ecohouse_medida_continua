@@ -1,0 +1,1121 @@
+EESchema Schematic File Version 2
+LIBS:wat-rescue
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:recom-rd
+LIBS:RO-1224S
+LIBS:mp-1584
+LIBS:nano
+LIBS:wemos_mini
+LIBS:wat-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L GND #PWR01
+U 1 1 584D06FF
+P 1190 1000
+F 0 "#PWR01" H 1190 750 50  0001 C CNN
+F 1 "GND" H 1190 850 50  0000 C CNN
+F 2 "" H 1190 1000 50  0000 C CNN
+F 3 "" H 1190 1000 50  0000 C CNN
+	1    1190 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG02
+U 1 1 584D0E54
+P 1190 950
+F 0 "#FLG02" H 1190 1045 50  0001 C CNN
+F 1 "PWR_FLAG" H 1190 1130 50  0000 C CNN
+F 2 "" H 1190 950 50  0000 C CNN
+F 3 "" H 1190 950 50  0000 C CNN
+	1    1190 950 
+	1    0    0    -1  
+$EndComp
+Text Label 3880 4405 0    60   ~ 0
+e_rx
+Text Label 3880 4505 0    60   ~ 0
+e_tx
+$Comp
+L R R2
+U 1 1 58501520
+P 9920 4050
+F 0 "R2" V 10000 4050 50  0000 C CNN
+F 1 "10K" V 9920 4050 50  0000 C CNN
+F 2 "oscar_libreria_huellas:Resistor_Horizontal_RM10mm" V 9850 4050 50  0001 C CNN
+F 3 "" H 9920 4050 50  0000 C CNN
+	1    9920 4050
+	-1   0    0    -1  
+$EndComp
+$Comp
+L GND #PWR03
+U 1 1 58501AA0
+P 9920 4850
+F 0 "#PWR03" H 9920 4600 50  0001 C CNN
+F 1 "GND" H 9920 4700 50  0000 C CNN
+F 2 "" H 9920 4850 50  0000 C CNN
+F 3 "" H 9920 4850 50  0000 C CNN
+	1    9920 4850
+	-1   0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG04
+U 1 1 5857A9BC
+P 1690 950
+F 0 "#FLG04" H 1690 1045 50  0001 C CNN
+F 1 "PWR_FLAG" H 1690 1130 50  0000 C CNN
+F 2 "" H 1690 950 50  0000 C CNN
+F 3 "" H 1690 950 50  0000 C CNN
+	1    1690 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR05
+U 1 1 5857A9F3
+P 1690 1100
+F 0 "#PWR05" H 1690 950 50  0001 C CNN
+F 1 "VCC" H 1690 1250 50  0000 C CNN
+F 2 "" H 1690 1100 50  0000 C CNN
+F 3 "" H 1690 1100 50  0000 C CNN
+	1    1690 1100
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR06
+U 1 1 5857C83E
+P 1320 2355
+F 0 "#PWR06" H 1320 2105 50  0001 C CNN
+F 1 "GND" H 1320 2205 50  0000 C CNN
+F 2 "" H 1320 2355 50  0000 C CNN
+F 3 "" H 1320 2355 50  0000 C CNN
+	1    1320 2355
+	-1   0    0    -1  
+$EndComp
+$Comp
+L CONN_01X02 P103
+U 1 1 5872A04E
+P 1120 1855
+F 0 "P103" H 1120 2005 50  0000 C CNN
+F 1 "V_IN" V 1220 1855 50  0000 C CNN
+F 2 "oscar_libreria_huellas:bornier2" H 1120 1855 50  0001 C CNN
+F 3 "" H 1120 1855 50  0000 C CNN
+	1    1120 1855
+	-1   0    0    -1  
+$EndComp
+$Comp
+L CONN_01X02 P102
+U 1 1 5872AC26
+P 10370 4400
+F 0 "P102" H 10245 4225 50  0000 C CNN
+F 1 "CAUDAL_2" V 10470 4400 50  0000 C CNN
+F 2 "oscar_libreria_huellas:bornier2" H 10370 4400 50  0001 C CNN
+F 3 "" H 10370 4400 50  0000 C CNN
+	1    10370 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R9
+U 1 1 58A0503E
+P 9850 1245
+F 0 "R9" V 9930 1245 50  0000 C CNN
+F 1 "2K" V 9850 1245 50  0000 C CNN
+F 2 "oscar_libreria_huellas:Resistor_Horizontal_RM10mm" V 9780 1245 50  0001 C CNN
+F 3 "" H 9850 1245 50  0000 C CNN
+	1    9850 1245
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR07
+U 1 1 58A05050
+P 9950 1720
+F 0 "#PWR07" H 9950 1470 50  0001 C CNN
+F 1 "GND" H 9950 1570 50  0000 C CNN
+F 2 "" H 9950 1720 50  0000 C CNN
+F 3 "" H 9950 1720 50  0000 C CNN
+	1    9950 1720
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X03 P106
+U 1 1 58A06006
+P 10375 1545
+F 0 "P106" H 10375 1745 50  0000 C CNN
+F 1 "18b20" V 10475 1545 50  0000 C CNN
+F 2 "oscar_libreria_huellas:bornier3" H 10375 1545 50  0001 C CNN
+F 3 "" H 10375 1545 50  0000 C CNN
+	1    10375 1545
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP1 C105
+U 1 1 58A1D1FB
+P 1870 2055
+F 0 "C105" H 1895 2155 50  0000 L CNN
+F 1 "220uF" H 1895 1955 50  0000 L CNN
+F 2 "Capacitors_THT:CP_Radial_D5.0mm_P2.00mm" H 1870 2055 50  0001 C CNN
+F 3 "" H 1870 2055 50  0000 C CNN
+	1    1870 2055
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X04 P109
+U 1 1 58A175A1
+P 7830 1395
+F 0 "P109" H 7830 1645 50  0000 C CNN
+F 1 "LCD_I2C" V 7930 1395 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x04" H 7830 1395 50  0001 C CNN
+F 3 "" H 7830 1395 50  0000 C CNN
+	1    7830 1395
+	-1   0    0    1   
+$EndComp
+$Comp
+L NANO U106
+U 1 1 58A54C69
+P 4750 1790
+F 0 "U106" H 5100 2790 50  0000 C CNN
+F 1 "NANO" H 4750 2640 50  0000 C CNN
+F 2 "oscar_libreria_huellas:arduino_nano" H 4450 990 50  0001 C CNN
+F 3 "DOCUMENTATION" H 4600 940 50  0001 C CNN
+	1    4750 1790
+	1    0    0    -1  
+$EndComp
+Text Label 8055 1345 0    60   ~ 0
+Vpc_5V
+$Comp
+L GND #PWR08
+U 1 1 58A94056
+P 8555 1245
+F 0 "#PWR08" H 8555 995 50  0001 C CNN
+F 1 "GND" H 8635 1265 50  0000 C CNN
+F 2 "" H 8555 1245 50  0000 C CNN
+F 3 "" H 8555 1245 50  0000 C CNN
+	1    8555 1245
+	1    0    0    -1  
+$EndComp
+Text Label 3625 1890 2    60   ~ 0
+e_tx
+Text Label 3660 1990 2    60   ~ 0
+e_rst
+Text Label 3440 1690 0    60   ~ 0
+18b20
+Text Label 9850 945  0    60   ~ 0
+Vpc_5V
+Text Label 9920 3600 0    60   ~ 0
+Vpc_5V
+Text Label 9500 1545 0    60   ~ 0
+18b20
+NoConn ~ 5500 2290
+NoConn ~ 5500 2390
+NoConn ~ 5500 2490
+NoConn ~ 4000 1090
+NoConn ~ 4000 1190
+NoConn ~ 4000 1290
+NoConn ~ 4000 2090
+NoConn ~ 4000 2190
+NoConn ~ 4000 2290
+NoConn ~ 4000 2390
+NoConn ~ 4000 2490
+Text Label 5650 4505 2    60   ~ 0
+e_rst
+Text Label 7340 4325 0    60   ~ 0
+caudal_1
+$Comp
+L TEST_1P W101
+U 1 1 58ACA1F0
+P 1870 1805
+F 0 "W101" H 1870 2075 50  0000 C CNN
+F 1 "+12V" H 1870 2005 50  0000 C CNN
+F 2 "Wire_Pads:SolderWirePad_single_0-8mmDrill" H 2070 1805 50  0001 C CNN
+F 3 "" H 2070 1805 50  0000 C CNN
+	1    1870 1805
+	1    0    0    -1  
+$EndComp
+Text Label 3440 1490 0    60   ~ 0
+caudal_1
+$Comp
+L GND #PWR09
+U 1 1 58BE924F
+P 5945 1190
+F 0 "#PWR09" H 5945 940 50  0001 C CNN
+F 1 "GND" H 5840 1195 50  0000 C CNN
+F 2 "" H 5945 1190 50  0000 C CNN
+F 3 "" H 5945 1190 50  0000 C CNN
+	1    5945 1190
+	-1   0    0    -1  
+$EndComp
+Text Label 5535 1390 0    60   ~ 0
+Vpc_5V
+$Comp
+L GND #PWR010
+U 1 1 58C1BA7B
+P 3880 3905
+F 0 "#PWR010" H 3880 3655 50  0001 C CNN
+F 1 "GND" H 3880 3755 50  0000 C CNN
+F 2 "" H 3880 3905 50  0000 C CNN
+F 3 "" H 3880 3905 50  0000 C CNN
+	1    3880 3905
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 59AD1449
+P 1160 4760
+F 0 "R1" V 1240 4760 50  0000 C CNN
+F 1 "10K" V 1160 4760 50  0000 C CNN
+F 2 "oscar_libreria_huellas:Resistor_Horizontal_RM10mm" V 1090 4760 50  0001 C CNN
+F 3 "" H 1160 4760 50  0000 C CNN
+	1    1160 4760
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP C101
+U 1 1 59AD144A
+P 1485 5285
+F 0 "C101" H 1510 5385 50  0000 L CNN
+F 1 "22uF" H 1510 5185 50  0000 L CNN
+F 2 "Capacitors_THT:CP_Radial_D5.0mm_P2.00mm" H 1523 5135 50  0001 C CNN
+F 3 "" H 1485 5285 50  0000 C CNN
+	1    1485 5285
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R3
+U 1 1 59AD144C
+P 1160 5285
+F 0 "R3" V 1240 5285 50  0000 C CNN
+F 1 "10K" V 1160 5285 50  0000 C CNN
+F 2 "oscar_libreria_huellas:Resistor_Horizontal_RM10mm" V 1090 5285 50  0001 C CNN
+F 3 "" H 1160 5285 50  0000 C CNN
+	1    1160 5285
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR011
+U 1 1 59AD1454
+P 1485 5530
+F 0 "#PWR011" H 1485 5280 50  0001 C CNN
+F 1 "GND" H 1485 5380 50  0000 C CNN
+F 2 "" H 1485 5530 50  0000 C CNN
+F 3 "" H 1485 5530 50  0000 C CNN
+	1    1485 5530
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR012
+U 1 1 59AD1455
+P 1160 5525
+F 0 "#PWR012" H 1160 5275 50  0001 C CNN
+F 1 "GND" H 1160 5375 50  0000 C CNN
+F 2 "" H 1160 5525 50  0000 C CNN
+F 3 "" H 1160 5525 50  0000 C CNN
+	1    1160 5525
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X02 P1
+U 1 1 59AD216F
+P 3660 5735
+F 0 "P1" H 3660 5885 50  0000 C CNN
+F 1 "PINZA_1" V 3760 5735 50  0000 C CNN
+F 2 "oscar_libreria_huellas:bornier2" H 3660 5735 50  0001 C CNN
+F 3 "" H 3660 5735 50  0000 C CNN
+	1    3660 5735
+	1    0    0    1   
+$EndComp
+$Comp
+L R R4
+U 1 1 59AD217B
+P 2835 5910
+F 0 "R4" V 2915 5910 50  0000 C CNN
+F 1 "10k" V 2835 5910 50  0000 C CNN
+F 2 "oscar_libreria_huellas:Resistor_Horizontal_RM10mm" V 2765 5910 50  0001 C CNN
+F 3 "" H 2835 5910 50  0000 C CNN
+	1    2835 5910
+	1    0    0    -1  
+$EndComp
+Text Label 1680 5010 0    60   ~ 0
+Ref_medida
+Text Label 2435 5685 0    60   ~ 0
+Ref_medida
+$Comp
+L CONN_01X02 P3
+U 1 1 59AD4A85
+P 5410 5740
+F 0 "P3" H 5410 5890 50  0000 C CNN
+F 1 "PINZA_2" V 5510 5740 50  0000 C CNN
+F 2 "oscar_libreria_huellas:bornier2" H 5410 5740 50  0001 C CNN
+F 3 "" H 5410 5740 50  0000 C CNN
+	1    5410 5740
+	1    0    0    1   
+$EndComp
+$Comp
+L R R6
+U 1 1 59AD4A8B
+P 4585 5915
+F 0 "R6" V 4665 5915 50  0000 C CNN
+F 1 "10k" V 4585 5915 50  0000 C CNN
+F 2 "oscar_libreria_huellas:Resistor_Horizontal_RM10mm" V 4515 5915 50  0001 C CNN
+F 3 "" H 4585 5915 50  0000 C CNN
+	1    4585 5915
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C4
+U 1 1 59AD4A91
+P 4910 5915
+F 0 "C4" H 4935 6015 50  0000 L CNN
+F 1 "100nF" H 4935 5815 50  0000 L CNN
+F 2 "Capacitors_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 4948 5765 50  0001 C CNN
+F 3 "" H 4910 5915 50  0000 C CNN
+	1    4910 5915
+	1    0    0    -1  
+$EndComp
+Text Label 4185 5690 0    60   ~ 0
+Ref_medida
+$Comp
+L CONN_01X02 P5
+U 1 1 59AD51AC
+P 7100 5740
+F 0 "P5" H 7100 5890 50  0000 C CNN
+F 1 "PINZA_3" V 7200 5740 50  0000 C CNN
+F 2 "oscar_libreria_huellas:bornier2" H 7100 5740 50  0001 C CNN
+F 3 "" H 7100 5740 50  0000 C CNN
+	1    7100 5740
+	1    0    0    1   
+$EndComp
+$Comp
+L R R8
+U 1 1 59AD51B2
+P 6275 5915
+F 0 "R8" V 6355 5915 50  0000 C CNN
+F 1 "R20" V 6275 5915 50  0000 C CNN
+F 2 "oscar_libreria_huellas:Resistor_Horizontal_RM10mm" V 6205 5915 50  0001 C CNN
+F 3 "" H 6275 5915 50  0000 C CNN
+	1    6275 5915
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C6
+U 1 1 59AD51B8
+P 6600 5915
+F 0 "C6" H 6625 6015 50  0000 L CNN
+F 1 "100nF" H 6625 5815 50  0000 L CNN
+F 2 "Capacitors_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 6638 5765 50  0001 C CNN
+F 3 "" H 6600 5915 50  0000 C CNN
+	1    6600 5915
+	1    0    0    -1  
+$EndComp
+Text Label 5875 5690 0    60   ~ 0
+Ref_medida
+$Comp
+L CONN_01X02 P6
+U 1 1 59AD5981
+P 8895 5725
+F 0 "P6" H 8895 5875 50  0000 C CNN
+F 1 "PINZA_4" V 8995 5725 50  0000 C CNN
+F 2 "oscar_libreria_huellas:bornier2" H 8895 5725 50  0001 C CNN
+F 3 "" H 8895 5725 50  0000 C CNN
+	1    8895 5725
+	1    0    0    1   
+$EndComp
+$Comp
+L C C7
+U 1 1 59AD598D
+P 8395 5900
+F 0 "C7" H 8420 6000 50  0000 L CNN
+F 1 "100nF" H 8420 5800 50  0000 L CNN
+F 2 "Capacitors_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 8433 5750 50  0001 C CNN
+F 3 "" H 8395 5900 50  0000 C CNN
+	1    8395 5900
+	1    0    0    -1  
+$EndComp
+Text Label 7670 5675 0    60   ~ 0
+Ref_medida
+$Comp
+L CONN_01X02 P2
+U 1 1 59AD6230
+P 3655 6745
+F 0 "P2" H 3655 6895 50  0000 C CNN
+F 1 "PINZA_5" V 3755 6745 50  0000 C CNN
+F 2 "oscar_libreria_huellas:bornier2" H 3655 6745 50  0001 C CNN
+F 3 "" H 3655 6745 50  0000 C CNN
+	1    3655 6745
+	1    0    0    1   
+$EndComp
+$Comp
+L R R5
+U 1 1 59AD6236
+P 2830 6920
+F 0 "R5" V 2910 6920 50  0000 C CNN
+F 1 "R10" V 2830 6920 50  0000 C CNN
+F 2 "oscar_libreria_huellas:Resistor_Horizontal_RM10mm" V 2760 6920 50  0001 C CNN
+F 3 "" H 2830 6920 50  0000 C CNN
+	1    2830 6920
+	1    0    0    -1  
+$EndComp
+Text Label 2430 6695 0    60   ~ 0
+Ref_medida
+Text Label 5530 1890 0    60   ~ 0
+intensidad_4
+Text Label 5530 1990 0    60   ~ 0
+intensidad_3
+Text Label 5530 2090 0    60   ~ 0
+intensidad_2
+Text Label 5530 2190 0    60   ~ 0
+intensidad_1
+Text Label 3515 6135 0    60   ~ 0
+intensidad_1
+Text Label 5275 6140 0    60   ~ 0
+intensidad_2
+Text Label 6980 6140 0    60   ~ 0
+intensidad_3
+Text Label 8785 6125 0    60   ~ 0
+intensidad_4
+Text Label 1160 4485 0    60   ~ 0
+Vpc_5V
+$Comp
+L R R12
+U 1 1 59AFCC68
+P 8070 5900
+F 0 "R12" V 8150 5900 50  0000 C CNN
+F 1 "R20" V 8070 5900 50  0000 C CNN
+F 2 "oscar_libreria_huellas:Resistor_Horizontal_RM10mm" V 8000 5900 50  0001 C CNN
+F 3 "" H 8070 5900 50  0000 C CNN
+	1    8070 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C1
+U 1 1 59AFE00D
+P 3160 5915
+F 0 "C1" H 3185 6015 50  0000 L CNN
+F 1 "100nF" H 3185 5815 50  0000 L CNN
+F 2 "Capacitors_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 3198 5765 50  0001 C CNN
+F 3 "" H 3160 5915 50  0000 C CNN
+	1    3160 5915
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C2
+U 1 1 59AFE386
+P 3155 6920
+F 0 "C2" H 3180 7020 50  0000 L CNN
+F 1 "100nF" H 3180 6820 50  0000 L CNN
+F 2 "Capacitors_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 3193 6770 50  0001 C CNN
+F 3 "" H 3155 6920 50  0000 C CNN
+	1    3155 6920
+	1    0    0    -1  
+$EndComp
+Text Label 4180 6700 0    60   ~ 0
+Ref_medida
+$Comp
+L C C5
+U 1 1 59AD624F
+P 4905 6925
+F 0 "C5" H 4930 7025 50  0000 L CNN
+F 1 "100nF" H 4930 6825 50  0000 L CNN
+F 2 "Capacitors_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 4943 6775 50  0001 C CNN
+F 3 "" H 4905 6925 50  0000 C CNN
+	1    4905 6925
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R7
+U 1 1 59AD6249
+P 4580 6925
+F 0 "R7" V 4660 6925 50  0000 C CNN
+F 1 "R10" V 4580 6925 50  0000 C CNN
+F 2 "oscar_libreria_huellas:Resistor_Horizontal_RM10mm" V 4510 6925 50  0001 C CNN
+F 3 "" H 4580 6925 50  0000 C CNN
+	1    4580 6925
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X02 P4
+U 1 1 59AD6243
+P 5405 6750
+F 0 "P4" H 5405 6900 50  0000 C CNN
+F 1 "PINZA_6" V 5505 6750 50  0000 C CNN
+F 2 "oscar_libreria_huellas:bornier2" H 5405 6750 50  0001 C CNN
+F 3 "" H 5405 6750 50  0000 C CNN
+	1    5405 6750
+	1    0    0    1   
+$EndComp
+Text Label 5535 1690 0    60   ~ 0
+scl_int_6
+Text Label 5540 1790 0    60   ~ 0
+sda_pre_2
+$Comp
+L C_Small C8
+U 1 1 59B15E22
+P 9920 4550
+F 0 "C8" H 9795 4650 50  0000 L CNN
+F 1 "100nF" H 9645 4450 50  0000 L CNN
+F 2 "Capacitors_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 9920 4550 50  0001 C CNN
+F 3 "" H 9920 4550 50  0000 C CNN
+	1    9920 4550
+	-1   0    0    -1  
+$EndComp
+Text Label 2155 1805 0    60   ~ 0
+Vpc_5V
+Text Label 3440 1590 0    60   ~ 0
+caudal_2
+Text Label 3630 1790 2    60   ~ 0
+e_rx
+NoConn ~ 5500 1090
+NoConn ~ 5500 1290
+$Comp
+L GND #PWR013
+U 1 1 5A7D2403
+P 9945 2905
+F 0 "#PWR013" H 9945 2655 50  0001 C CNN
+F 1 "GND" H 9950 2755 50  0000 C CNN
+F 2 "" H 9945 2905 50  0000 C CNN
+F 3 "" H 9945 2905 50  0000 C CNN
+	1    9945 2905
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X03 P7
+U 1 1 5A7D2409
+P 10370 2535
+F 0 "P7" H 10370 2735 50  0000 C CNN
+F 1 "MANO_2" V 10470 2535 50  0000 C CNN
+F 2 "oscar_libreria_huellas:bornier3" H 10370 2535 50  0001 C CNN
+F 3 "" H 10370 2535 50  0000 C CNN
+	1    10370 2535
+	1    0    0    -1  
+$EndComp
+Text Label 9945 2210 0    60   ~ 0
+Vpc_5V
+$Comp
+L C C9
+U 1 1 5A7D34BE
+P 9675 2750
+F 0 "C9" H 9700 2850 50  0000 L CNN
+F 1 "100nF" H 9400 2845 50  0000 L CNN
+F 2 "Capacitors_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 9713 2600 50  0001 C CNN
+F 3 "" H 9675 2750 50  0000 C CNN
+	1    9675 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR014
+U 1 1 5A7D38B2
+P 9675 2900
+F 0 "#PWR014" H 9675 2650 50  0001 C CNN
+F 1 "GND" H 9680 2740 50  0000 C CNN
+F 2 "" H 9675 2900 50  0000 C CNN
+F 3 "" H 9675 2900 50  0000 C CNN
+	1    9675 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R10
+U 1 1 5A7D6D29
+P 7955 4025
+F 0 "R10" V 8035 4025 50  0000 C CNN
+F 1 "10K" V 7955 4025 50  0000 C CNN
+F 2 "oscar_libreria_huellas:Resistor_Horizontal_RM10mm" V 7885 4025 50  0001 C CNN
+F 3 "" H 7955 4025 50  0000 C CNN
+	1    7955 4025
+	-1   0    0    -1  
+$EndComp
+$Comp
+L GND #PWR015
+U 1 1 5A7D6D2F
+P 7955 4825
+F 0 "#PWR015" H 7955 4575 50  0001 C CNN
+F 1 "GND" H 7955 4675 50  0000 C CNN
+F 2 "" H 7955 4825 50  0000 C CNN
+F 3 "" H 7955 4825 50  0000 C CNN
+	1    7955 4825
+	-1   0    0    -1  
+$EndComp
+$Comp
+L CONN_01X02 P8
+U 1 1 5A7D6D35
+P 8405 4375
+F 0 "P8" H 8280 4200 50  0000 C CNN
+F 1 "CAUDAL_1" V 8505 4375 50  0000 C CNN
+F 2 "oscar_libreria_huellas:bornier2" H 8405 4375 50  0001 C CNN
+F 3 "" H 8405 4375 50  0000 C CNN
+	1    8405 4375
+	1    0    0    -1  
+$EndComp
+Text Label 7955 3575 0    60   ~ 0
+Vpc_5V
+$Comp
+L C_Small C10
+U 1 1 5A7D6D43
+P 7955 4525
+F 0 "C10" H 7830 4625 50  0000 L CNN
+F 1 "100nF" H 7680 4425 50  0000 L CNN
+F 2 "Capacitors_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 7955 4525 50  0001 C CNN
+F 3 "" H 7955 4525 50  0000 C CNN
+	1    7955 4525
+	-1   0    0    -1  
+$EndComp
+Text Label 9335 4350 0    60   ~ 0
+caudal_2
+$Comp
+L GND #PWR016
+U 1 1 5A7D8EA9
+P 8030 2900
+F 0 "#PWR016" H 8030 2650 50  0001 C CNN
+F 1 "GND" H 8035 2750 50  0000 C CNN
+F 2 "" H 8030 2900 50  0000 C CNN
+F 3 "" H 8030 2900 50  0000 C CNN
+	1    8030 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X03 P9
+U 1 1 5A7D8EAF
+P 8455 2530
+F 0 "P9" H 8455 2730 50  0000 C CNN
+F 1 "MANO_1" V 8555 2530 50  0000 C CNN
+F 2 "oscar_libreria_huellas:bornier3" H 8455 2530 50  0001 C CNN
+F 3 "" H 8455 2530 50  0000 C CNN
+	1    8455 2530
+	1    0    0    -1  
+$EndComp
+Text Label 8030 2205 0    60   ~ 0
+Vpc_5V
+$Comp
+L C C11
+U 1 1 5A7D8EBA
+P 7760 2745
+F 0 "C11" H 7785 2845 50  0000 L CNN
+F 1 "100nF" H 7485 2840 50  0000 L CNN
+F 2 "Capacitors_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 7798 2595 50  0001 C CNN
+F 3 "" H 7760 2745 50  0000 C CNN
+	1    7760 2745
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR017
+U 1 1 5A7D8EC0
+P 7760 2895
+F 0 "#PWR017" H 7760 2645 50  0001 C CNN
+F 1 "GND" H 7765 2735 50  0000 C CNN
+F 2 "" H 7760 2895 50  0000 C CNN
+F 3 "" H 7760 2895 50  0000 C CNN
+	1    7760 2895
+	1    0    0    -1  
+$EndComp
+Text Label 5530 1590 0    60   ~ 0
+intensidad_5
+$Comp
+L GND #PWR018
+U 1 1 5A7DE418
+P 3600 1230
+F 0 "#PWR018" H 3600 980 50  0001 C CNN
+F 1 "GND" H 3695 1245 50  0000 C CNN
+F 2 "" H 3600 1230 50  0000 C CNN
+F 3 "" H 3600 1230 50  0000 C CNN
+	1    3600 1230
+	-1   0    0    -1  
+$EndComp
+Text Label 5530 1490 0    60   ~ 0
+presion_1
+$Comp
+L D D2
+U 1 1 5A8314E7
+P 9920 3750
+F 0 "D2" H 9920 3850 50  0000 C CNN
+F 1 "1N4148" H 9920 3650 50  0000 C CNN
+F 2 "Diodes_THT:D_A-405_P7.62mm_Horizontal" H 9920 3750 50  0001 C CNN
+F 3 "" H 9920 3750 50  0000 C CNN
+	1    9920 3750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L D D3
+U 1 1 5A831C67
+P 7955 3725
+F 0 "D3" H 7955 3825 50  0000 C CNN
+F 1 "1N4148" H 7955 3625 50  0000 C CNN
+F 2 "Diodes_THT:D_A-405_P7.62mm_Horizontal" H 7955 3725 50  0001 C CNN
+F 3 "" H 7955 3725 50  0000 C CNN
+	1    7955 3725
+	0    -1   -1   0   
+$EndComp
+$Comp
+L D D1
+U 1 1 5A831FEA
+P 1595 1805
+F 0 "D1" H 1595 1905 50  0000 C CNN
+F 1 "1N4007" H 1595 1705 50  0000 C CNN
+F 2 "oscar_libreria_huellas:Diode_DO-35_SOD27_Horizontal_RM10" H 1595 1805 50  0001 C CNN
+F 3 "" H 1595 1805 50  0000 C CNN
+	1    1595 1805
+	-1   0    0    1   
+$EndComp
+Text Label 7150 2530 0    60   ~ 0
+presion_1
+Text Label 9050 2535 0    60   ~ 0
+sda_pre_2
+Text Label 8055 1445 0    60   ~ 0
+sda_pre_2
+Text Label 3525 7145 0    60   ~ 0
+intensidad_5
+Text Label 8055 1545 0    60   ~ 0
+scl_int_6
+Text Label 5265 7150 0    60   ~ 0
+scl_int_6
+$Comp
+L WeMos_mini U1
+U 1 1 5A905F1B
+P 4775 4155
+F 0 "U1" H 4775 4655 60  0000 C CNN
+F 1 "WeMos_mini" H 4775 3655 60  0000 C CNN
+F 2 "libreria_huellas_proyecto:D1_mini_board_direct" H 5325 3455 60  0001 C CNN
+F 3 "" H 5325 3455 60  0000 C CNN
+	1    4775 4155
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5205 7150 5205 6800
+Wire Wire Line
+	4580 6775 4580 6700
+Connection ~ 4580 6700
+Wire Wire Line
+	4905 6700 4905 6775
+Connection ~ 4905 6700
+Wire Wire Line
+	4165 6700 5205 6700
+Wire Wire Line
+	4165 6700 4165 6705
+Wire Wire Line
+	4580 7150 5655 7150
+Connection ~ 5205 7150
+Wire Wire Line
+	4580 7075 4580 7150
+Wire Wire Line
+	4905 7075 4905 7150
+Connection ~ 4905 7150
+Connection ~ 3160 6135
+Wire Wire Line
+	3160 6065 3160 6135
+Connection ~ 3160 5685
+Wire Wire Line
+	3160 5685 3160 5765
+Wire Wire Line
+	1485 5435 1485 5530
+Wire Wire Line
+	1160 5435 1160 5525
+Wire Wire Line
+	2415 6695 2415 6700
+Wire Wire Line
+	2415 6695 3455 6695
+Connection ~ 3155 7145
+Wire Wire Line
+	3155 7070 3155 7145
+Connection ~ 3155 6695
+Wire Wire Line
+	3155 6695 3155 6770
+Wire Wire Line
+	2830 7070 2830 7145
+Connection ~ 2830 6695
+Wire Wire Line
+	2830 6770 2830 6695
+Connection ~ 3455 7145
+Wire Wire Line
+	3455 7145 3455 6795
+Wire Wire Line
+	2830 7145 3905 7145
+Wire Wire Line
+	7655 5675 7655 5680
+Wire Wire Line
+	7655 5675 8695 5675
+Connection ~ 8395 6125
+Wire Wire Line
+	8395 6050 8395 6125
+Connection ~ 8395 5675
+Wire Wire Line
+	8395 5675 8395 5750
+Wire Wire Line
+	8070 6050 8070 6125
+Connection ~ 8070 5675
+Wire Wire Line
+	8070 5750 8070 5675
+Connection ~ 8695 6125
+Wire Wire Line
+	8695 6125 8695 5775
+Wire Wire Line
+	8070 6125 9145 6125
+Wire Wire Line
+	5860 5690 5860 5695
+Wire Wire Line
+	5860 5690 6900 5690
+Connection ~ 6600 6140
+Wire Wire Line
+	6600 6065 6600 6140
+Connection ~ 6600 5690
+Wire Wire Line
+	6600 5690 6600 5765
+Wire Wire Line
+	6275 6065 6275 6140
+Connection ~ 6275 5690
+Wire Wire Line
+	6275 5765 6275 5690
+Connection ~ 6900 6140
+Wire Wire Line
+	6900 6140 6900 5790
+Wire Wire Line
+	6275 6140 7350 6140
+Wire Wire Line
+	4170 5690 4170 5695
+Wire Wire Line
+	4170 5690 5210 5690
+Connection ~ 4910 6140
+Wire Wire Line
+	4910 6065 4910 6140
+Connection ~ 4910 5690
+Wire Wire Line
+	4910 5690 4910 5765
+Wire Wire Line
+	4585 6065 4585 6140
+Connection ~ 4585 5690
+Wire Wire Line
+	4585 5765 4585 5690
+Connection ~ 5210 6140
+Wire Wire Line
+	5210 6140 5210 5790
+Wire Wire Line
+	4585 6140 5660 6140
+Wire Wire Line
+	2420 5685 2420 5690
+Wire Wire Line
+	2420 5685 3460 5685
+Wire Wire Line
+	2055 5010 2055 5005
+Wire Wire Line
+	1160 5010 2055 5010
+Wire Wire Line
+	2835 6060 2835 6135
+Connection ~ 2835 5685
+Wire Wire Line
+	2835 5760 2835 5685
+Connection ~ 3460 6135
+Wire Wire Line
+	3460 6135 3460 5785
+Wire Wire Line
+	2835 6135 3910 6135
+Connection ~ 1485 5010
+Wire Wire Line
+	1485 5135 1485 5010
+Connection ~ 1160 5010
+Wire Wire Line
+	1160 4910 1160 5135
+Wire Wire Line
+	1160 4385 1160 4610
+Connection ~ 1320 2280
+Wire Wire Line
+	1870 1805 1870 1905
+Wire Wire Line
+	1870 2280 1870 2205
+Wire Wire Line
+	1320 2280 1870 2280
+Wire Wire Line
+	1320 1905 1320 2355
+Connection ~ 1870 1805
+Wire Wire Line
+	1745 1805 2520 1805
+Wire Wire Line
+	1320 1805 1445 1805
+Wire Wire Line
+	8030 1245 8555 1245
+Wire Wire Line
+	8030 1345 8330 1345
+Wire Wire Line
+	8030 1445 8330 1445
+Wire Wire Line
+	8030 1545 8330 1545
+Connection ~ 9850 1045
+Wire Wire Line
+	10025 1445 10175 1445
+Wire Wire Line
+	10025 1045 10025 1445
+Wire Wire Line
+	9850 1045 10025 1045
+Wire Wire Line
+	9850 945  9850 1095
+Connection ~ 9850 1545
+Wire Wire Line
+	9850 1395 9850 1545
+Wire Wire Line
+	9500 1545 10175 1545
+Wire Wire Line
+	9950 1645 9950 1720
+Wire Wire Line
+	10175 1645 9950 1645
+Connection ~ 9920 4750
+Wire Wire Line
+	10170 4750 9920 4750
+Wire Wire Line
+	10170 4450 10170 4750
+Connection ~ 9920 4350
+Wire Wire Line
+	9220 4350 10170 4350
+Wire Wire Line
+	9920 4650 9920 4850
+Wire Wire Line
+	9920 4200 9920 4450
+Wire Wire Line
+	1690 950  1690 1100
+Wire Wire Line
+	1190 950  1190 1000
+Wire Wire Line
+	3365 1690 4000 1690
+Wire Wire Line
+	3365 1790 4000 1790
+Wire Wire Line
+	3365 1890 4000 1890
+Wire Wire Line
+	3370 1990 4000 1990
+Wire Wire Line
+	3365 1490 4000 1490
+Wire Wire Line
+	3365 1590 4000 1590
+Wire Wire Line
+	5500 1390 6135 1390
+Wire Wire Line
+	5500 1490 6135 1490
+Wire Wire Line
+	5500 1590 6135 1590
+Wire Wire Line
+	5500 1690 6130 1690
+Wire Wire Line
+	5500 1790 6135 1790
+Wire Wire Line
+	5500 1890 6135 1890
+Wire Wire Line
+	5500 1990 6135 1990
+Wire Wire Line
+	5500 2090 6135 2090
+Wire Wire Line
+	5500 2190 6135 2190
+Wire Wire Line
+	5500 1190 5945 1190
+Wire Wire Line
+	8995 2535 10170 2535
+Wire Wire Line
+	9945 2635 9945 2905
+Wire Wire Line
+	10170 2635 9945 2635
+Wire Wire Line
+	9675 2600 9675 2535
+Connection ~ 9675 2535
+Wire Wire Line
+	10170 2435 9945 2435
+Wire Wire Line
+	9945 2435 9945 2210
+Connection ~ 7955 4725
+Wire Wire Line
+	8205 4725 7955 4725
+Wire Wire Line
+	8205 4425 8205 4725
+Connection ~ 7955 4325
+Wire Wire Line
+	7255 4325 8205 4325
+Wire Wire Line
+	7955 4625 7955 4825
+Wire Wire Line
+	7955 4175 7955 4425
+Wire Wire Line
+	7080 2530 8255 2530
+Wire Wire Line
+	8030 2630 8030 2900
+Wire Wire Line
+	8255 2630 8030 2630
+Wire Wire Line
+	7760 2595 7760 2530
+Connection ~ 7760 2530
+Wire Wire Line
+	8255 2430 8030 2430
+Wire Wire Line
+	8030 2430 8030 2205
+Wire Wire Line
+	4000 1390 3755 1390
+Wire Wire Line
+	3755 1390 3755 1215
+Wire Wire Line
+	3755 1215 3600 1215
+Wire Wire Line
+	3600 1215 3600 1230
+Wire Wire Line
+	4275 4405 3880 4405
+Wire Wire Line
+	4275 4505 3880 4505
+Wire Wire Line
+	5275 4505 5670 4505
+Wire Wire Line
+	4275 3805 3880 3805
+Text Label 3880 3805 0    60   ~ 0
+Vpc_5V
+NoConn ~ 5275 3905
+NoConn ~ 5275 4205
+NoConn ~ 5275 4305
+NoConn ~ 5275 4405
+NoConn ~ 4275 4005
+NoConn ~ 4275 4105
+NoConn ~ 4275 4205
+Wire Wire Line
+	4275 3905 3880 3905
+NoConn ~ 5275 3805
+NoConn ~ 5275 4005
+NoConn ~ 5275 4105
+NoConn ~ 4275 4305
+$Comp
+L VCC #PWR019
+U 1 1 5A9124BD
+P 1160 4385
+F 0 "#PWR019" H 1160 4235 50  0001 C CNN
+F 1 "VCC" H 1160 4535 50  0000 C CNN
+F 2 "" H 1160 4385 50  0000 C CNN
+F 3 "" H 1160 4385 50  0000 C CNN
+	1    1160 4385
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

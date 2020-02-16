@@ -1,0 +1,74 @@
+
+/*
+Cambios sobre el fichero principal src.ino
+*/
+
+    if (analog_measure==1){
+      digitalWrite(ANALOG_POWER,HIGH);
+      //resistencia de 39.0 ohm -> 51.3
+      emon1.current(ANALOG_INPUT,51.3);
+      delay(5);
+      int analog_value;
+      if (debug==1) analog_value=int(analogRead(OFFSET));
+      double irms = emon1.calcIrms(142);
+      digitalWrite(ANALOG_POWER,LOW);
+      //1480 -> 260ms
+      //1480 -> 220ms with vref
+      double power=irms*230;
+      emonth.pulsecount = (unsigned long)(power);
+      if (debug==1){
+        Serial.print("analog_value= ");
+        Serial.println(analog_value);
+        Serial.print("power= ");
+        Serial.println(power);
+        Serial.println((int)(power));
+        Serial.print("irms= ");
+        Serial.println(irms);
+        Serial.flush();
+      }
+    }
+
+/*
+Cambios sobre la libreria emonlib en emonlib.cpp
+*/
+
+double EnergyMonitor::calcIrms(unsigned int Number_of_Samples)
+{
+
+  #if defined emonTxV3
+    int SupplyVoltage=3300;
+  #else
+    int SupplyVoltage = readVcc();
+  #endif
+
+  offsetI = analogRead(17);
+  // Serial.println(millis());
+
+  for (unsigned int n = 0; n < Number_of_Samples; n++)
+  {
+    sampleI = analogRead(inPinI);
+
+    // Digital low pass filter extracts the 2.5 V or 1.65 V dc offset,
+    //  then subtract this - signal is now centered on 0 counts.
+    // offsetI = (offsetI + (sampleI-offsetI)/1024);
+    // offsetI = analogRead(17);
+    filteredI = sampleI - offsetI;
+
+    // Root-mean-square method current
+    // 1) square current values
+    sqI = filteredI * filteredI;
+    // 2) sum
+    sumI += sqI;
+  }
+  // Serial.println(millis());
+
+  double I_RATIO = ICAL *((SupplyVoltage/1000.0) / (ADC_COUNTS));
+  Irms = I_RATIO * sqrt(sumI / Number_of_Samples);
+
+  //Reset accumulators
+  sumI = 0;
+  //--------------------------------------------------------------------------------------
+
+  return Irms;
+}
+
